@@ -4,7 +4,9 @@
 This is a polyfill that fires change events when browsers autofill form fields without firing a change event.
 The implementation is generic so it works in any application that uses either jQuery and/or Angular.
 
->  warning: this poly fill doesn't fit with a submit button/input binding to the form state
+>  warning: this poly fill doesn't fit with a submit button/input binding to the form state.
+>           unless you click on **the page any point** you want to trigger a digest (it seems the action trigger the browser
+>           to do some real filling), then the button become enable.
 
 [Test page with manual tests](http://e-cloud.github.io/autofill-event/)
 
